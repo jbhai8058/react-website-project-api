@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\ChartController;
 use App\Http\Controllers\Admin\ClientReviewController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\FooterController;
+use App\Http\Controllers\Admin\InformationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -37,5 +38,9 @@ Route::post('/contactsend',[ContactController::class, 'onContactSend']);
 // Footer Route
 
 Route::get('/footerdata',[FooterController::class, 'onSelectAll']);
+
+// Informatin Route
+
+Route::get('/information',[InformationController::class, 'onSelectAll']);
 
 
