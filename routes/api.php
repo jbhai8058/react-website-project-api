@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\ChartController;
 use App\Http\Controllers\Admin\ClientReviewController;
 use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\CoursesController;
 use App\Http\Controllers\Admin\FooterController;
 use App\Http\Controllers\Admin\InformationController;
 use Illuminate\Http\Request;
@@ -19,9 +20,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+/*
+|
+|  Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+|      return $request->user();
+|
+|   });
+|
+*/
 
 // chart Route
 
@@ -42,5 +48,11 @@ Route::get('/footerdata',[FooterController::class, 'onSelectAll']);
 // Informatin Route
 
 Route::get('/information',[InformationController::class, 'onSelectAll']);
+
+// Video All Route
+
+Route::get('/coursehome',[CoursesController::class, 'onSelectFour']);
+Route::get('/courseall',[CoursesController::class, 'onSelectAll']);
+Route::post('/coursedetails',[CoursesController::class, 'onSelectDetails']);
 
 
