@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ChartController;
 use App\Http\Controllers\Admin\ClientReviewController;
+use App\Http\Controllers\Admin\ContactController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +28,9 @@ Route::get('/chartdata',[ChartController::class, 'onAllSelect']);
 // Client Review Route
 
 Route::get('/clientreview',[ClientReviewController::class, 'onAllSelect']);
+
+// Contact Form Route
+
+Route::post('/contactsend',[ContactController::class, 'onContactSend']);
+
 
