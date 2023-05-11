@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\CoursesController;
 use App\Http\Controllers\Admin\FooterController;
 use App\Http\Controllers\Admin\InformationController;
+use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -45,9 +46,13 @@ Route::post('/contactsend',[ContactController::class, 'onContactSend']);
 
 Route::get('/footerdata',[FooterController::class, 'onSelectAll']);
 
-// Informatin Route
+// Information Route
 
 Route::get('/information',[InformationController::class, 'onSelectAll']);
+
+// Service Route
+
+Route::get('/services',[ServiceController::class, 'ServiceView']);
 
 // Video All Route
 
