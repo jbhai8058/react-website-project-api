@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ClientReviewController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\CoursesController;
 use App\Http\Controllers\Admin\FooterController;
+use App\Http\Controllers\Admin\HomePageEtcController;
 use App\Http\Controllers\Admin\InformationController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ServiceController;
@@ -66,4 +67,11 @@ Route::post('/coursedetails',[CoursesController::class, 'onSelectDetails']);
 Route::get('/projecthome',[ProjectController::class, 'onSelectThree']);
 Route::get('/projectall',[ProjectController::class, 'onSelectAll']);
 Route::post('/projectdetails',[ProjectController::class, 'ProjectDetails']);
+
+// Home Etc All Route
+
+Route::get('/home/video',[HomePageEtcController::class, 'SelectVideo']);
+Route::get('/totalhome',[HomePageEtcController::class, 'SelectTotalHome']);
+Route::get('/techhome',[HomePageEtcController::class, 'SelectTechHome']);
+Route::get('/homepage/title',[HomePageEtcController::class, 'SelectHomeTitle']);
 

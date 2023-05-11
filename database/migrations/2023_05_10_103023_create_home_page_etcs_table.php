@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('home_title');
             $table->string('home_subtitle');
-            $table->text('tect_description');
+            $table->text('tech_description');
             $table->string('happy_client');
             $table->string('complete_prjects');
             $table->string('hour_of_support');
-            $table->text('vider_description');
+            $table->text('video_description');
             $table->string('video_url');
             $table->timestamps();
         });
