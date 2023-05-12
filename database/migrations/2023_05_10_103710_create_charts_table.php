@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('charts', function (Blueprint $table) {
             $table->id();
-            $table->string('x_data');
-            $table->string('y_data');
+            $table->string('Technology');
+            $table->string('Projects');
             $table->timestamps();
         });
     }
