@@ -18,8 +18,8 @@ class CoursesController extends Controller
         return $result;
     } // end method
 
-    public function onSelectDetails(Request $request){
-        $id = $request->input('id');
+    public function onSelectDetails($courseId){
+        $id = $courseId;
         $result = Courses::where('id',$id)->get();
         return $result;
     } // end method

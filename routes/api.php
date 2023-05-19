@@ -60,7 +60,7 @@ Route::get('/services',[ServiceController::class, 'ServiceView']);
 
 Route::get('/coursehome',[CoursesController::class, 'onSelectFour']);
 Route::get('/courseall',[CoursesController::class, 'onSelectAll']);
-Route::post('/coursedetails',[CoursesController::class, 'onSelectDetails']);
+Route::get('/coursedetails/{courseId}',[CoursesController::class, 'onSelectDetails']);
 
 // Project All Route
 
