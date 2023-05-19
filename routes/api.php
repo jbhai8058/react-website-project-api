@@ -66,7 +66,7 @@ Route::post('/coursedetails',[CoursesController::class, 'onSelectDetails']);
 
 Route::get('/projecthome',[ProjectController::class, 'onSelectThree']);
 Route::get('/projectall',[ProjectController::class, 'onSelectAll']);
-Route::post('/projectdetails',[ProjectController::class, 'ProjectDetails']);
+Route::get('/projectdetails/{projectId}',[ProjectController::class, 'ProjectDetails']);
 
 // Home Etc All Route
 
