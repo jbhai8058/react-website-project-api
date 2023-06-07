@@ -7,7 +7,7 @@
                       <span class="nav-text">Dashboard</span>
                   </a>
                   <ul aria-expanded="false">
-                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
 
                   </ul>
               </li>

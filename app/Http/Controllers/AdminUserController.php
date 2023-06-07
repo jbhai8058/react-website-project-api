@@ -23,7 +23,7 @@ class AdminUserController extends Controller
 
     	return view('backend.user.user_profile',compact('user'));
 
-    } // en mehtod 
+    } // end mehtod 
 
 
     public function UserProfileEdit(){
