@@ -1,5 +1,5 @@
   <div class="nav-header">
-            <a href="index.html" class="brand-logo">
+            <a href="{{ route('dashboard') }}" class="brand-logo">
                Easy Standing 
             </a>
 
