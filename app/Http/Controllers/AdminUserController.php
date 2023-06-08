@@ -84,6 +84,7 @@ class AdminUserController extends Controller
     		$user = User::find(FacadesAuth::id());
     		$user->password = Hash::make($request->password);
     		$user->save();
+
     		FacadesAuth::logout();
     		return redirect()->route('admin.logout');
     	}else{
@@ -91,10 +92,6 @@ class AdminUserController extends Controller
     	}
 
     } // end mehtod 
-
-
-
-
 
 }
  

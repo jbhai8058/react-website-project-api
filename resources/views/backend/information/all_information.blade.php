@@ -58,7 +58,7 @@
          
         <td>{{ Str::limit($item->about, 20, '..') }}</td>
         <td>{{ Str::limit($item->refund, 20, '..') }}  </td>
-        <td>{{ Str::limit($item->trems, 20, '..') }} </td>
+        <td>{{ Str::limit($item->terms, 20, '..') }} </td>
         <td>{{ Str::limit($item->privacy, 20, '..') }} </td>
         
           <td>
