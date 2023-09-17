@@ -1,6 +1,14 @@
 <?php
 
+use App\Http\Controllers\Admin\ChartController;
+use App\Http\Controllers\Admin\ClientReviewController;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\CoursesController;
+use App\Http\Controllers\Admin\FooterController;
+use App\Http\Controllers\Admin\HomePageEtcController;
 use App\Http\Controllers\Admin\InformationController;
+use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\AdminUserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +23,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('/');
+Route::get('/', function () {
+    return view('welcome');
+})->name('/');
 
 
 // Route::middleware([

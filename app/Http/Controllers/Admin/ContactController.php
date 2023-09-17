@@ -29,4 +29,23 @@ class ContactController extends Controller
         }
 
     } // end method
+
+    public function AllContactMessage(){
+        $contact = Contact::all();
+      return view('backend.contact.all_contact',compact('contact'));
+  } // end method 
+
+
+  public function DeleteContactMessage($id){
+
+      Contact::findOrFail($id)->delete();
+
+      $notification = array(
+          'message' => 'Contact Message Delected Successfully',
+          'alert-type' => 'success'
+      );
+
+      return redirect()->back()->with($notification);
+
+  } // end mehtod
 }
