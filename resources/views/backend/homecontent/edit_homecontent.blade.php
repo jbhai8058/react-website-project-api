@@ -81,18 +81,18 @@
 
 
     <div class="form-group">
-                <label class="info-title">Total Student </label>
-         <input type="text" name="total_student" class="form-control input-default "value="{{ $homecontent->total_student }}"  >
-            @error('total_student')
+                <label class="info-title">Total Happy Clients </label>
+         <input type="text" name="happy_client" class="form-control input-default "value="{{ $homecontent->happy_client }}"  >
+            @error('happy_client')
             <span class="text-danger">{{ $message }}</span>
             @enderror
 
             </div>
 
                 <div class="form-group">
-                <label class="info-title">Total Course </label>
-         <input type="text" name="total_course" class="form-control input-default " value="{{ $homecontent->total_course }}" >
-            @error('total_course')
+                <label class="info-title">Total Complete Projects </label>
+         <input type="text" name="complete_prjects" class="form-control input-default " value="{{ $homecontent->complete_prjects }}" >
+            @error('complete_prjects')
             <span class="text-danger">{{ $message }}</span>
             @enderror
 
@@ -100,9 +100,9 @@
 
 
                 <div class="form-group">
-                <label class="info-title">Total Review </label>
-         <input type="text" name="total_review" class="form-control input-default " value="{{ $homecontent->total_review }}" >
-            @error('total_review')
+                <label class="info-title">Total Hour Of Support </label>
+         <input type="text" name="hour_of_support" class="form-control input-default " value="{{ $homecontent->hour_of_support }}" >
+            @error('hour_of_support')
             <span class="text-danger">{{ $message }}</span>
             @enderror
 
@@ -110,8 +110,8 @@
 
            <div class="form-group">
                 <label class="info-title">Video Description </label>
-                <textarea class="form-control" name="video_desciption" id="summernote2">
-                    {{ $homecontent->video_desciption }}
+                <textarea class="form-control" name="video_description" id="summernote2">
+                    {{ $homecontent->video_description }}
                 </textarea>
             </div>
 

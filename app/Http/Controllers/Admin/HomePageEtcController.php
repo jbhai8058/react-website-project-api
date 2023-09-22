@@ -58,10 +58,10 @@ class HomePageEtcController extends Controller
                 'home_title' => $request->home_title,
                 'home_subtitle' => $request->home_subtitle,
                 'tech_description' => $request->tech_description,
-                'total_student' => $request->total_student,
-                'total_course' => $request->total_course,
-                'total_review' => $request->total_review,
-                'video_desciption' => $request->video_desciption,
+                'happy_client' => $request->happy_client,
+                'complete_prjects' => $request->complete_prjects,
+                'hour_of_support' => $request->hour_of_support,
+                'video_description' => $request->video_description,
                 'video_url' => $request->video_url,            
                  
             ]);
@@ -91,10 +91,10 @@ class HomePageEtcController extends Controller
                 'home_title' => $request->home_title,
                 'home_subtitle' => $request->home_subtitle,
                 'tech_description' => $request->tech_description,
-                'total_student' => $request->total_student,
-                'total_course' => $request->total_course,
-                'total_review' => $request->total_review,
-                'video_desciption' => $request->video_desciption,
+                'happy_client' => $request->happy_client,
+                'complete_prjects' => $request->complete_prjects,
+                'hour_of_support' => $request->hour_of_support,
+                'video_description' => $request->video_description,
                 'video_url' => $request->video_url,            
                  
             ]);
