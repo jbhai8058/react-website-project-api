@@ -10,11 +10,11 @@
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								 
-								 
+
+
 							</div>
 							<div class="modal-body">
-								 
+
 							</div>
 						</div>
 					</div>
@@ -26,12 +26,12 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            
-                             
+
+
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                        
+
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
          <div class="form-group">
             <label class="info-title">Service Description </label>
         <textarea name="service_description" class="form-control" rows="4" id="comment">
-            {{ $services->service_discription }}
+            {{ $services->service_description }}
 
         </textarea>
             @error('service_description')
@@ -86,14 +86,15 @@
 
 
             <div class="form-group">
-               <img id="showImage" src="{{ asset($services->service_logo)  }}" style="width: 100px; height: 100px;">
+               {{-- <img id="showImage" src="{{ asset($services->service_logo)  }}" style="width: 100px; height: 100px;"> --}}
+               <img id="showImage" src="{{ (!empty($services->service_logo))?url('upload/service/'.$services->service_logo):url('upload/no_image.jpg') }}" style="width: 100px; height: 100px;">
             </div>
 
 
 
 
            <input type="submit" class="btn btn-success" value="Update Service">
-            
+
         </form>
     </div>
                             </div>
@@ -101,7 +102,7 @@
 					</div>
 
 
-					  
+
 
 
 
@@ -126,9 +127,9 @@
 	 		}
 	 		reader.readAsDataURL(e.target.files['0']);
 	 	});
-	 });   
+	 });
 
 </script>
 
 
-@endsection 
+@endsection

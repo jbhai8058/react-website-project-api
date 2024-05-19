@@ -9,11 +9,11 @@
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								 
-							 
+
+
 							</div>
 							<div class="modal-body">
-							 
+
 							</div>
 						</div>
 					</div>
@@ -21,12 +21,12 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            
-                            
+
+
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                        
+
                     </div>
                 </div>
                 <!-- row -->
@@ -42,25 +42,28 @@
         <table class="table table-responsive-md">
             <thead>
                 <tr>
-                    
-                     
+
+
                     <th><strong>Service Name </strong></th>
                     <th><strong>Service Description</strong></th>
                     <th><strong>Service Logo</strong></th>
-                   
+
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                                       
-		@foreach($service as $item)									 
+
+		@foreach($service as $item)
 	<tr>
-         
-        
+
+
         <td> {{ $item->service_name  }}  </td>
-        <td>{{ Str::limit($item->service_discription, 15, '..') }} </td>
-        <td> <img src="{{ asset($item->service_logo) }}" style="width: 70px; height: 40px;"> </td>
-        
+        <td>{{ Str::limit($item->service_description, 15, '..') }} </td>
+        {{-- <img src="{{ asset($item->service_logo) }}" style="width: 70px; height: 40px;"> --}}
+        <td>
+            <img src="{{ (!empty($item->service_logo))?url('upload/service/'.$item->service_logo):url('upload/no_image.jpg') }}" style="width: 100px; height: 100px;">
+        </td>
+
           <td>
 				<div class="d-flex">
 	 <a href="{{ route('edit.service',$item->id) }}" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
@@ -76,13 +79,13 @@
                             </div>
                         </div>
                     </div>
-		 
 
 
 
 
 
-				 
+
+
                     </div>
                 </div>
             </div>
